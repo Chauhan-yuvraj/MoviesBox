@@ -22,22 +22,22 @@
         <div class="md:flex items-center -mx-10">
             <div class="w-full md:w-1/2 px-10 mb-10 md:mb-0">
                 <div class="relative">
-                    <img src="../pics/dune.jpg" class="w-64 relative z-10 img-fluid" alt="">
+                    <img src="../pics/dune.jpg" class="w-64 relative z-10 img-fluid" id="movieimage" alt="">
                 </div>
             </div>
             <div class="w-full md:w-1/2 px-10">
                 <div class="mb-10">
-                    <h1 class="font-bold uppercase text-2xl mb-5">Dune<br>2021 film directed by Denis Villeneuve</h1>
-                    <p class="text-sm">Dune (titled onscreen as Dune: Part One) is a 2021 American epic science fiction film directed and co-produced by Denis Villeneuve, who co-wrote the screenplay with Jon Spaihts and Eric Roth. It is the first of a two-part adaptation of the 1965 novel of the same name by Frank Herbert <a href="https://en.wikipedia.org/wiki/Dune_(2021_film)" class="opacity-50 text-gray-900 hover:opacity-100 inline-block text-xs leading-none border-b border-gray-900">MORE <i class="mdi mdi-arrow-right"></i></a></p>
+                    <h1 class="font-bold uppercase text-2xl mb-1 movieTitle">Dune</h1> <span class="movieBy font-bold uppercase text-xl mb-5"> 2021 film directed by Denis Villeneuve </span>
+                    <p class="text-sm mt-5 movieDec">Dune (titled onscreen as Dune: Part One) is a 2021 American epic science fiction film directed and co-produced by Denis Villeneuve, who co-wrote the screenplay with Jon Spaihts and Eric Roth. It is the first of a two-part adaptation of the 1965 novel of the same name by Frank Herbert <a href="https://en.wikipedia.org/wiki/Dune_(2021_film)" class="opacity-50 text-gray-900 hover:opacity-100 inline-block text-xs leading-none border-b border-gray-900">MORE <i class="mdi mdi-arrow-right"></i></a></p>
                 </div>
-                <div>
+                <div id="buying">
                     <div class="inline-block align-bottom mr-5">
                         <span class="text-2xl leading-none align-baseline">$</span>
                         <span class="font-bold text-5xl leading-none align-baseline">5</span>
                         <span class="text-2xl leading-none align-baseline">.99</span>
                     </div>
                     <div class="inline-block align-bottom">
-                        <button class="bg-black opacity-75 hover:opacity-100 text-yellow-900 hover:text-white rounded-full px-10 py-2 font-semibold"><i class="mdi mdi-cart -ml-2 mr-2"></i> BUY NOW</button>
+                        <button id="addToCart" class="bg-black opacity-75 hover:opacity-100 text-yellow-900 hover:text-white rounded-full px-10 py-2 font-semibold"><i class="mdi mdi-cart -ml-2 mr-2"></i> ADD TO CART</button>
                     </div>
                 </div>
             </div>
@@ -48,10 +48,13 @@
 <!-- BUY ME A BEER AND HELP SUPPORT OPEN-SOURCE RESOURCES -->
 <div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
     <div>
-        <a title="Home" href="./cart.html" target="" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
+        <a title="Home" href="./cart.html" target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
             <img class="object-cover object-center w-full h-full rounded-full cart" src="../pics/cart.png"/>
         </a>
     </div>
 </div>
 </body>
+<script src="../JsFile/movieDetails.js" type="module"></script>
+<script src="../JsFile/movieList.js" type="module"></script>
+<script src="../JsFile/cart.js" type="module"></script>
 </html>
